@@ -652,6 +652,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 162733398963204862, guid: 0a0e2d9fc306b6844a1651485ab36a6c, type: 3}
+      propertyPath: lengthInSec
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 162733398963204862, guid: 0a0e2d9fc306b6844a1651485ab36a6c, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3415179476774512280, guid: 0a0e2d9fc306b6844a1651485ab36a6c, type: 3}
       propertyPath: m_Name
       value: Player Rig
