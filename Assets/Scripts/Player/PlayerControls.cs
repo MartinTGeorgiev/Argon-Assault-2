@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 public class PlayerControls : MonoBehaviour
 {
     [SerializeField] InputAction movement;
+    [SerializeField] InputAction fire;
+
     [SerializeField] float controlSpeed = 30f;
     [SerializeField] float xRange = 13f;
     [SerializeField] float yRange = 8f;
@@ -21,16 +23,19 @@ public class PlayerControls : MonoBehaviour
     void OnEnable()
     {
         movement.Enable();
+        fire.Enable();
     }
     void OnDisable()
     {
         movement.Disable();
+        fire.Disable();
     }
 
     void Update()
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
     private void ProcessRotation()
@@ -63,5 +68,20 @@ public class PlayerControls : MonoBehaviour
         float clammpedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
         transform.localPosition = new Vector3(clammpedXPos, clammpedYPos, transform.localPosition.z);
+    }
+
+    void ProcessFiring()
+    {
+        if (fire.ReadValue<float>() > 0.5)
+        {
+            Debug.Log("Button is Pressed");
+        }
+        else
+        {
+            Debug.Log("Button not pressed");
+        }
+        //if pushing fire button
+        //Then print shoooting
+        //or don't print shooting
     }
 }
