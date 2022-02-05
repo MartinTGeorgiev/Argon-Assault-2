@@ -172,7 +172,7 @@ PrefabInstance:
     - target: {fileID: 472801929, guid: 1f3b1f695f3e8f042b3f2708e4385c40, type: 3}
       propertyPath: lasers.Array.data[0]
       value: 
-      objectReference: {fileID: 275710744371466788}
+      objectReference: {fileID: 2375478049848976146}
     - target: {fileID: 472801929, guid: 1f3b1f695f3e8f042b3f2708e4385c40, type: 3}
       propertyPath: lasers.Array.data[1]
       value: 
@@ -352,9 +352,9 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3835492894419036286, guid: 1f3b1f695f3e8f042b3f2708e4385c40, type: 3}
   m_PrefabInstance: {fileID: 3970037893747746755}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &275710744371466788 stripped
+--- !u!1 &2375478049848976146 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3804394998429496807, guid: 1f3b1f695f3e8f042b3f2708e4385c40, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1724611327601722577, guid: 1f3b1f695f3e8f042b3f2708e4385c40, type: 3}
   m_PrefabInstance: {fileID: 3970037893747746755}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8751574926288776727 stripped
