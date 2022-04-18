@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 3364604735363811587}
   - component: {fileID: 3364604735362714563}
   - component: {fileID: 4631049239751988548}
+  - component: {fileID: 4202461934809530864}
   m_Layer: 0
-  m_Name: Enemy_Drone
+  m_Name: Bumble_Bee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,3 +99,20 @@ CapsuleCollider:
   m_Height: 1.55
   m_Direction: 1
   m_Center: {x: -0.000000059604645, y: -0.24, z: 0.33}
+--- !u!114 &4202461934809530864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3364604735360783619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b234da7e55899459d0c34c0d10d75c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathVFX: {fileID: 390973874959280739, guid: b45db6c947e02b740b73977b7f19d8e3, type: 3}
+  hitVFX: {fileID: 390973874959280739, guid: 52ba10f3d1af44143af1b49e40872aea, type: 3}
+  parent: {fileID: 0}
+  scorePerHit: 1
+  healthPoints: 5
