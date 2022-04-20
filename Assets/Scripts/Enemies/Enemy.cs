@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathVFX;
     [SerializeField] GameObject hitVFX;
     [SerializeField] int scorePerHit = 1;
+    [SerializeField] int scorePerDeath = 5;
     [SerializeField] int healthPoints = 5;
 
     GameObject parentGameObject;
@@ -50,6 +51,9 @@ public class Enemy : MonoBehaviour
     {
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parentGameObject.transform;
+
+        scoreBoard.IncreaseScore(scorePerDeath);
+
         Destroy(gameObject);
     }
 }
