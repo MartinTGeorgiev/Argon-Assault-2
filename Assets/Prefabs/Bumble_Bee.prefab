@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3364604735362714563}
   - component: {fileID: 4631049239751988548}
   - component: {fileID: 4202461934809530864}
+  - component: {fileID: 9049428435224893923}
   m_Layer: 0
   m_Name: Bumble_Bee
   m_TagString: Untagged
@@ -94,7 +95,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 3364604735360783619}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 1.53
   m_Height: 1.55
   m_Direction: 1
@@ -111,8 +112,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b234da7e55899459d0c34c0d10d75c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 390973874959280739, guid: b45db6c947e02b740b73977b7f19d8e3, type: 3}
+  deathFX: {fileID: 390973874959280739, guid: b45db6c947e02b740b73977b7f19d8e3, type: 3}
   hitVFX: {fileID: 390973874959280739, guid: 52ba10f3d1af44143af1b49e40872aea, type: 3}
   scorePerHit: 1
   scorePerDeath: 10
   healthPoints: 3
+--- !u!65 &9049428435224893923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3364604735360783619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5754952, y: 3.3034472, z: 3.9624016}
+  m_Center: {x: -0.000000059604645, y: 0.1767767, z: 0.00000011920929}

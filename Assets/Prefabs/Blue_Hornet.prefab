@@ -462,6 +462,7 @@ GameObject:
   - component: {fileID: 5371320183988993847}
   - component: {fileID: 5381403657100344179}
   - component: {fileID: 731632321490970141}
+  - component: {fileID: 7615427777193052925}
   m_Layer: 0
   m_Name: Blue_Hornet
   m_TagString: Untagged
@@ -547,11 +548,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b234da7e55899459d0c34c0d10d75c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 390973874959280739, guid: b45db6c947e02b740b73977b7f19d8e3, type: 3}
+  deathFX: {fileID: 390973874959280739, guid: b45db6c947e02b740b73977b7f19d8e3, type: 3}
   hitVFX: {fileID: 390973874959280739, guid: 52ba10f3d1af44143af1b49e40872aea, type: 3}
   scorePerHit: 1
   scorePerDeath: 10
   healthPoints: 2
+--- !u!65 &7615427777193052925
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402843155736147521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.115113, y: 4.876071, z: 10.850533}
+  m_Center: {x: 0, y: -0.000013887882, z: 0.0000026226044}
 --- !u!1 &5595182230929641601
 GameObject:
   m_ObjectHideFlags: 0

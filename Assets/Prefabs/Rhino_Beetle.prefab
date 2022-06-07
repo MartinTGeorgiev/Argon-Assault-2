@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 3810477161305119080}
   - component: {fileID: 3801244770289304770}
   - component: {fileID: 629326070604800693}
+  - component: {fileID: 3117443516680978640}
   m_Layer: 0
   m_Name: Rhino_Beetle
   m_TagString: Untagged
@@ -412,11 +413,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b234da7e55899459d0c34c0d10d75c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 390973874959280739, guid: b45db6c947e02b740b73977b7f19d8e3, type: 3}
+  deathFX: {fileID: 390973874959280739, guid: b45db6c947e02b740b73977b7f19d8e3, type: 3}
   hitVFX: {fileID: 390973874959280739, guid: 52ba10f3d1af44143af1b49e40872aea, type: 3}
   scorePerHit: 1
   scorePerDeath: 20
   healthPoints: 4
+--- !u!65 &3117443516680978640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3788309196524706038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.608271, y: 3.2846658, z: 12.307949}
+  m_Center: {x: 0, y: -0.00001564622, z: 0}
 --- !u!1 &3842698200788742818
 GameObject:
   m_ObjectHideFlags: 0
